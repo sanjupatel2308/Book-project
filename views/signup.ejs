@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Shoes mall</title>
+    <%-include("_externallink.ejs")%>
+        <style>
+            .login {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 10px;
+                box-shadow: 10px 10px 10px;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="center">
+
+
+        <div class="container1">
+            <label class="close-btn fas fa-times" title="close"></label>
+
+            <div class="text"> Register</div>
+
+            <form method="post" action="/signup">
+                <div class="data">
+                    <label>Name</label>
+                    <input type="text" name="username" required>
+                </div>
+
+                <div class="data">
+                    <label>Email</label>
+                    <input type="text" name="email" required>
+                </div>
+
+                <div class="data">
+                    <label>Password</label>
+                    <input type="password" name="password" required>
+                </div>
+                <div class="data">
+                    <label>Contact</label>
+                    <input type="text" name="contact" required>
+                </div>
+                <!-- <div class="forgot-pass"><a href="#">Forgot Password?</a></div> -->
+
+                <div class="btn1">
+                    <div class="inner"> </div>
+                    <button type="submit">Register</button>
+                </div>
+
+                <div class="signup-link">I'm Already Registered? <a href="/signin">SignIn</a></div>
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>
